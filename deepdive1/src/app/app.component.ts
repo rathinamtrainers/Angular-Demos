@@ -31,4 +31,12 @@ export class AppComponent {
     })
   }
 
+  onChangeFirst() {
+    this.serverElements[0].name = "Name Changed!";
+  }
+
+  onDestroyFirst() {
+    // Delete one element at index 0. We are deleting the first element of the array.
+    this.serverElements.splice(0,1)
+  }
 }
